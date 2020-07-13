@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="shortcut icon" href="./assets/favico.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function ajustarNav() {
+            let nav = document.getElementsByClassName('navigation')[0]
+            window.scrollY > 50 ? nav.className = 'navigation navigation-dark' : nav.className = 'navigation';
+        }
+    </script>
+</head>
+
+<body onscroll="ajustarNav()">
+    <header class="navigation">
+        <img src="./assets/spoty_logo_white.webp" alt="Logo Spotify">
+        <ul>
+            <li>
+                <a href="">Premium</a>
+            </li>
+            <li>
+                <a href="">Ajuda</a>
+            </li>
+            <li>
+                <a href="">Baixar</a>
+            </li>
+            <li>
+                <div class="bar"></div>
+            </li>
+            <li>
+                <a href="">Inscrever-se</a>
+            </li>
+            <li>
+                <a href="">Entrar</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="disclosure">
+        <h1>Aproveite 1 mês grátis de Premium</h1>
+        <h3>Depois, apenas R$ 16,90/mês. Cancele quando quiser.</h3>
+        <button class="btn">VER PLANOS</button>
+        <div>
+            <a href="">São aplicáveis termos e condições.</a>
+            <span>O mês grátis não está disponível para usuários que já experimentaram o Premium.</span>
+        </div>
+    </section>
+
+    <section class="content">
+        <h1 class="title">Por que virar Premium?</h1>
+
+        <div class="why-premium">
+            <div>
+                <img src="./assets/spoty_down_music.webp" alt="">
+                <h3>Baixe suas músicas.</h3>
+                <p>Ouça de onde quiser.</p>
+            </div>
+            <div>
+                <img src="./assets/spoty_no_adc.webp" alt="">
+                <h3>Sem anúncios para interromper.</h3>
+                <p>Sem anúncios para interromper.</p>
+            </div>
+            <div>
+                <img src="./assets/spoty_any_music.webp" alt="">
+                <h3>Ouça qualquer música.</h3>
+                <p>Mesmo no celular ou tablet.</p>
+            </div>
+            <div>
+                <img src="./assets/spoty_next_music.webp" alt="">
+                <h3>Pule quantas faixas quiser.</h3>
+                <p>Ouça só as que você curtir.</p>
+            </div>
+        </div>
+
+        <h1 class="title title-second">Escolha seu plano Premium</h1>
+        <h4 class="subtitle">Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</h4>
+
+        <div class="card-list">
+            <div class="card">
+                <div class="card-top">
+                    <h3>Individual</h3>
+                    <p>R$ 16,90/mês após o período da oferta</p>
+                    <p>1 conta</p>
+                    <hr>
+                    <div class="card-items">
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Curta música sem anúncios</span>
+                            </div>
+                        </div>
+
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Ouça em qualquer lugar — até offline</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Toque o que quiser</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Pague adiantado ou faça uma assinatura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="card-btn">
+                        <button class="btn">Começar</button>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="">São aplicáveis termos e condições.</a>
+                        <span>O mês grátis não está disponível para usuários que já experimentaram o Premium.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-top">
+                    <h3>DUO</h3>
+                    <p>R$ 21,90/mês após o período da oferta</p>
+                    <p>2 conta</p>
+                    <hr>
+                    <div class="card-items">
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>2 contas Premium para um casal que mora junto</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Duo Mix: uma playlist só pra vocês, atualizada regularmente com músicas que os
+                                    dois
+                                    gostam</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Ouça sem anúncio, no modo offline e sob demanda</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="card-btn">
+                        <button class="btn">Começar</button>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="">São aplicáveis termos e condições.</a>
+                        <span>O mês grátis não está disponível para usuários que já experimentaram o Premium.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-top">
+                    <h3>Família</h3>
+                    <p>R$ 26,90/mês após o período da oferta</p>
+                    <p>Até 6 contas</p>
+                    <hr>
+                    <div class="card-items">
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>6 contas Premium para familiares que moram no mesmo endereço</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Family Mix: uma playlist pra família, atualizada regularmente com músicas que todo
+                                    mundo gosta</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Bloqueie música explícita</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Ouça sem anúncio, no modo offline e sob demanda</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Pague adiantado ou faça uma assinatura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="card-btn">
+                        <button class="btn">Começar</button>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="">São aplicáveis termos e condições.</a>
+                        <span>O mês grátis não está disponível para usuários que já experimentaram o Premium.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-top">
+                    <h3>Universitário</h3>
+                    <p>R$ 8,50/mês após o período da oferta</p>
+                    <p>1 conta</p>
+                    <hr>
+                    <div class="card-items">
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Desconto especial para estudantes universitários que tenham direito à
+                                    oferta</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Curta música sem anúncios</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Ouça em qualquer lugar — até offline</span>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div>
+                                <svg height="24" width="24">
+                                    <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Toque o que quiser</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="card-btn">
+                        <button class="btn">Começar</button>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>Plano disponível somente para estudantes universitários de instituições de ensino superior
+                            aprovadas. O mês grátis não está disponível para usuários que já experimentaram o
+                            Premium</span>
+                        <a href="">São aplicáveis termos e condições</a>
+                        <span> da oferta do Spotify de desconto para universitários.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="">Legal</a>
+            </li>
+            <li>
+                <a href="">Sobre</a>
+            </li>
+            <li>
+                <a href="">Sobre anúncios</a>
+            </li>
+        </ul>
+        <div>
+            <span>Brasil <img src="./assets/brasil.jpg" alt=""></span>
+            <span>© 2020 Spotify AB</span>
+        </div>
+    </footer>
+</body>
+
+</html>
