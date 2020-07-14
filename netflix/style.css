@@ -3,53 +3,134 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  cursor: pointer;
 }
 
-
 .header{
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%),
+  height: 115vh;
+  background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,0.4),rgba(0,0,0,.9)),
                     url('./assets/netflix-bg.jpg');
                     background-size: cover;
                     background-repeat: no-repeat;
+                    background-position: bottom;
   padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.header>div{
-  /* margin-top: 20px; */
+.header .nav{
   height: 64px;
   width: 100%;
   padding: 0 56px;
   display: flex;
   justify-content: space-between;
 }
-.header div svg{
-  fill: #f00;
+.header .nav svg{
+  fill: rgb(216, 2, 2);
   height: 50px;
-  width: 150px;
+  width: 145px;
 }
-.header div button{
+.header .nav a{
   margin-top: 8px;
-  border: none;
+  padding: 7px 17px;
   background: #f00;
+  height: min-content;
   color: #fff;
   font-weight: 400;
-  height:34px;
-  width: 78px;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 16px;
+  text-align: center;
+}
+.header .middle{
+  margin-top: -50px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.header .middle h1{
+  font-size: 3.2em;
+  width: 50%;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.header .middle h3{
+  font-size: 1.8em;
+  font-weight: 400;
+  width: 75%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header .middle form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.header .middle form div{
+  background: #fff;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 2px 0 0 2px;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ########################################## */
+/* fazer efeito de focus com javascript */
+.header .middle form div:hover{
+  border-color: #0071eb;
+}
+/* ############################################# */
+
+.header .middle form div span{
+  font-size: 0.8em;
+  /* align-self: initial; */
+  padding: 5px;
+  color: #8c8c8c;
+}
+.header .middle form div input{
+  line-height: 28px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.header .middle form button{
+  background: #bb0a12;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 0 35px;
+  transition: background 0.5s;
+}
+.header .middle form button i{
+  margin-left: 5px;
+}
+.header .middle form button:hover{
+  background: #f40612;
+}
+.header .middle h4{
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 /* disclosure */
 .bar{
-  width: 100vw;
+  width: 100%;
   background: #222;
   height: 8px;
 }
 
 .disclosure{
-  width: 100vw;
   display: flex;
   background: #000;
   color: #fff;
@@ -57,7 +138,6 @@
   padding-left:8%;
   padding-bottom: 40px;
 }
-
 .disclosure h1{
   font-size: 3em;
 }
@@ -65,6 +145,7 @@
   font-size: 1.3em;
   font-weight: 500;
 }
+
 .disclosure .tv{
   position: relative;
   width: 70%;
@@ -79,4 +160,44 @@
   margin-top: 15%;
   margin-left: 12%;
   width: 75%;
+}
+.mobile>img{
+  width: 80%;
+}
+.mobile{
+  width: 50%;
+  border: 1px solid red;
+  margin-left: -8%;
+  
+}
+
+.on-mobile{
+  transform: translate(30%,-130%);
+  background: #000;
+  display: flex;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.on-mobile .mov{
+  width: 50px;
+}
+.on-mobile .gif{
+  width: 50px;
+  height: 50px;
+}
+.on-mobile div{
+  width: 100%;
+  padding-left: 10px;
+}
+.on-mobile div span{
+  font-weight: 700;
+}
+.on-mobile div p{
+  color: #0071eb;
+  font-size: 0.9em;
 }
