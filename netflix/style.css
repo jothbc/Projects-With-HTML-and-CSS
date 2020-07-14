@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.header{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%),
+                    url('./assets/netflix-bg.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+  padding-top: 20px;
+}
+.header>div{
+  /* margin-top: 20px; */
+  height: 64px;
+  width: 100%;
+  padding: 0 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.header div svg{
+  fill: #f00;
+  height: 50px;
+  width: 150px;
+}
+.header div button{
+  margin-top: 8px;
+  border: none;
+  background: #f00;
+  color: #fff;
+  font-weight: 400;
+  height:34px;
+  width: 78px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* disclosure */
+.bar{
+  width: 100vw;
+  background: #222;
+  height: 8px;
+}
+
+.disclosure{
+  width: 100vw;
+  display: flex;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  padding-left:8%;
+  padding-bottom: 40px;
+}
+
+.disclosure h1{
+  font-size: 3em;
+}
+.disclosure h3{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.disclosure .tv{
+  position: relative;
+  width: 70%;
+  margin-right: 8%;
+}
+.disclosure .tv img{
+  position: relative;
+  width: 100%;
+}
+.disclosure .tv video{
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 12%;
+  width: 75%;
+}
